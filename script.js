@@ -42,3 +42,18 @@ const unflipCards = () => {
     resetBoard()
   }, 900)
 }
+
+const resetBoard = () => {
+  ;[cardOne, cardTwo] = [null, null]
+  ;[lockBoard] = [false]
+}
+
+const resetGame = () => {
+  score = 0
+  scoreDisplay.textContent = score
+  cards.forEach((card) => {
+    card.classList.remove("flip")
+    card.addEventListener("click", () => flipCard(card))
+  })
+  shuffleCards()
+}
