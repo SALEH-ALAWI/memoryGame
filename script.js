@@ -19,6 +19,20 @@ const shuffleCards = () => {
   cardArray.forEach((card) => container.appendChild(card))
 }
 
+const flipCard = (card) => {
+  if (lockBoard || card.classList.contains("flip")) return
+
+  card.classList.add("flip")
+
+  if (!cardOne) {
+    cardOne = card
+    return
+  }
+
+  cardTwo = card
+  checkForMatch()
+}
+
 const checkForMatch = () => {
   const Match =
     cardOne.querySelector("img").src === cardTwo.querySelector("img").src
@@ -59,8 +73,7 @@ const resetGame = () => {
 }
 
 cards.forEach((card) => {
-  // adding click event to all cards
   card.addEventListener("click", () => flipCard(card))
-})
+}) // adding click event to all cards
 
 resetBtn.addEventListener("click", resetGame)

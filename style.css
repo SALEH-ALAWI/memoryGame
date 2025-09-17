@@ -12,7 +12,6 @@
   justify-content: center;
   align-items: center;
   gap: 150px;
-  background: rgb(211, 126, 76);
   background-image: url(images/112233.jpg);
   background-size: cover;
   background-position: center;
@@ -48,7 +47,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(170, 71, 71);
   height: 100vh;
   background-image: url(images/9391721.jpg);
   background-size: cover;
