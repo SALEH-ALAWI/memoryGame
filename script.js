@@ -25,3 +25,20 @@ const checkForMatch = () => {
 
   Match ? disableCards() : unflipCards()
 }
+
+const disableCards = () => {
+  score++
+  scoreDisplay.textContent = score
+  cardOne.removeEventListener("click", () => flipCard(cardOne))
+  cardTwo.removeEventListener("click", () => flipCard(cardTwo))
+  resetBoard()
+}
+
+const unflipCards = () => {
+  lockBoard = true
+  setTimeout(() => {
+    cardOne.classList.remove("flip")
+    cardTwo.classList.remove("flip")
+    resetBoard()
+  }, 900)
+}
