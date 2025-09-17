@@ -57,3 +57,10 @@ const resetGame = () => {
   })
   shuffleCards()
 }
+
+cards.forEach((card) => {
+  // adding click event to all cards
+  card.addEventListener("click", () => flipCard(card))
+})
+
+resetBtn.addEventListener("click", resetGame)
