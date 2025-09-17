@@ -110,3 +110,19 @@ body {
 .card.flip .back-emoji {
   transform: rotateY(0);
 }
+
+.cards .card .show {
+  height: 100%;
+  width: 100%;
+  background: rgb(222, 216, 211);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px rgb(124, 84, 105);
+  pointer-events: pointer;
+  user-select: none;
+  position: absolute;
+  transition: transform 0.25s linear;
+  backface-visibility: hidden;
+  background-image: url(images/112233.jpg);
+  background-size: cover;
+  background-position: center;
+}
