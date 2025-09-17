@@ -126,3 +126,28 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.score-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 10px;
+  font-size: 20px;
+  border: none;
+}
+
+#resetBtn {
+  padding: 5px 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
