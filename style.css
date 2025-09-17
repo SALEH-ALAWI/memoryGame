@@ -89,3 +89,24 @@ body {
   perspective: 800px;
   transform-style: preserve-3d;
 }
+
+.card .front-emoji span {
+  font-size: 45px;
+  color: blueviolet;
+}
+
+.card .back-emoji {
+  transform: rotateY(-180deg);
+}
+
+.card .back-emoji img {
+  max-width: 45px;
+}
+
+.card.flip .front-emoji {
+  transform: rotateY(180deg);
+}
+
+.card.flip .back-emoji {
+  transform: rotateY(0);
+}
