@@ -20,6 +20,31 @@
   border-radius: 30px;
 }
 
+h2 {
+  font-size: 60px;
+  color: black;
+  border-radius: 20px;
+  margin: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  padding: 15px 10px;
+  color: rgb(11, 10, 11);
+  background: #fff;
+
+  border: none;
+  font-size: 1.5em;
+  border-radius: 15px;
+  position: relative;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   display: flex;
   justify-content: center;
