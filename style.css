@@ -32,7 +32,6 @@ a {
   padding: 15px 10px;
   color: rgb(11, 10, 11);
   background: #fff;
-
   border: none;
   font-size: 1.5em;
   border-radius: 15px;
@@ -64,4 +63,29 @@ body {
   padding: 30px;
   box-shadow: 0 3px 10px rgb(124, 84, 105);
   pointer-events: pointer;
+}
+
+.cards,
+.card,
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.cards {
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards .card {
+  cursor: pointer;
+  height: calc(100% / 5 - 10px);
+  width: calc(100% / 7 - 10px);
+  position: relative;
+  perspective: 800px;
+  transform-style: preserve-3d;
 }
