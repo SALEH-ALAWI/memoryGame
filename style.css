@@ -84,7 +84,7 @@ body {
   height: calc(100% / 5 - 10px);
   width: calc(100% / 4 - 10px);
   position: relative;
-  perspective: 800px;
+  perspective: 800px; /*low card turnover*/
   transform-style: preserve-3d;
 }
 
@@ -94,15 +94,15 @@ body {
 }
 
 .card .back-emoji {
-  transform: rotateY(-180deg);
+  transform: rotateY(-180deg); /*reveal the locations of the cards*/
 }
 
 .card .back-emoji img {
-  max-width: 45px;
+  max-width: 45px; /* size of emojis */
 }
 
 .card.flip .front-emoji {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /*it will not be completed */
 }
 
 .card.flip .back-emoji {
@@ -114,11 +114,10 @@ body {
   width: 100%;
   background: rgb(222, 216, 211);
   border-radius: 7px;
-  box-shadow: 0 3px 10px rgb(124, 84, 105);
+  box-shadow: 0 3px 10px rgb(124, 84, 105); /*shadow for cards*/
   pointer-events: pointer;
-  user-select: none;
   position: absolute;
-  transition: transform 0.25s linear;
+  transition: transform 0.25s linear; /*makes the card move to flip*/
   backface-visibility: hidden;
   background-image: url(images/112233.jpg);
   background-size: cover;

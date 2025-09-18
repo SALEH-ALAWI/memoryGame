@@ -30,7 +30,7 @@
 ![Smile](https://www.emoji.family/api/emojis/1f920/noto/svg)
 
 #####
-![emoji](https://cliply.co/wp-content/uploads/2020/01/401911130_THINKING_FACE_BG_400.gif)
+![emoji]*************(https://cliply.co/wp-content/uploads/2020/01/401911130_THINKING_FACE_BG_400.gif)
 ***
 
 ### **Future Updates & Edits**

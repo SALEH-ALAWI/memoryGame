@@ -53,9 +53,10 @@ const disableCards = () => {
   cardOne.removeEventListener("click", () => flipCard(cardOne))
   cardTwo.removeEventListener("click", () => flipCard(cardTwo))
   resetBoard()
-} // cant flip matching cards
+} // cant flip matching cards and disable it cards when you click card
 
 const unflipCards = () => {
+  // you cant flip the card more than twice you can flip 2 only then return
   // removing both flip cards
   lockBoard = true
   setTimeout(() => {
@@ -66,9 +67,9 @@ const unflipCards = () => {
 }
 
 const resetBoard = () => {
-  ;[cardOne, cardTwo] = [null, null]
-  ;[lockBoard] = [false]
-} // here u can flip a lot of cards
+  ;[cardOne, cardTwo] = [null, null] // clear the array
+  ;[lockBoard] = [false] // you can flip it again
+}
 
 const resetGame = () => {
   score = 0
