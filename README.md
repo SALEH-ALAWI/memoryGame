@@ -22,7 +22,7 @@
 
 ### **Description**
 
-##### Just a memory card game, just click on the card to match and then you get Scores  [here](https://sophisticated-pen.surge.sh).
+##### Just a memory card game, just click on the card to match and then you get Scores  [here](https://innate-silver.surge.sh).
 ***
 ### **Screenshots**
 
